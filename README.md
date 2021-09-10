@@ -38,6 +38,21 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+&nbsp;
+
 ## Basics
 - The main app entry-point is the `_app.tsx` file, you would do initial app setup in this file.
 - the `index.tsx` at the root of the `pages/` dir would be your `/` entry page.
+- The `Link` tags allow you to do **client-side** navigation in the application. (as opposed to normal `<a>` tag)
+- `{' '}` adds an empty space, which is used to divide text over multiple lines.
+
+&nbsp;
+
+- Links explained: "in a production build of Next.js, whenever `Link` components appear in the browser’s viewport, Next.js automatically prefetches the code for the linked page in the background. By the time you click the link, the code for the destination page will already be loaded in the background, and the page transition will be near-instant!"
+
+- Static assets: "Next.js can serve static assets, like images, under the top-level public directory. Files inside public can be referenced from the root of the application similar to pages."
+
+### Progress
++ Create a Next.js app ✅
++ Navigate between pages ✅
++ Assets, metadata and css (6)
