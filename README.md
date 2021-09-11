@@ -62,6 +62,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 &nbsp;
 
+## Good quotes from the docs
+
 - Links explained: "in a production build of Next.js, whenever `Link` components appear in the browser’s viewport, Next.js automatically prefetches the code for the linked page in the background. By the time you click the link, the code for the destination page will already be loaded in the background, and the page transition will be near-instant!"
 
 - Static assets: "Next.js can serve static assets, like images, under the top-level public directory. Files inside public can be referenced from the root of the application similar to pages."
@@ -69,6 +71,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Rendering: "By default, Next.js pre-renders every page. This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO."
 
 - **hydration**: "Each generated HTML is associated with minimal JavaScript code necessary for that page. When a page is loaded by the browser, its JavaScript code runs and makes the page fully interactive. (This process is called hydration.)"
+
+&nbsp;
 
 ### Progress
 Basics
