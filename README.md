@@ -46,13 +46,47 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - The `Link` tags allow you to do **client-side** navigation in the application. (as opposed to normal `<a>` tag)
 - `{' '}` adds an empty space, which is used to divide text over multiple lines.
 
+### Styles
+- Global styles can only be imported in the `_app.js` file.
+- You can import css modules into component files to scope them and assign classes via `className={style.className}`
+
+### Pre-rendering
+- Next.js has two forms of pre-rendering:
+    + `static generation`: generates html at **build time** the pre-rendered html is used on each request.
+        + You can use static generation for Marketing pages, Blog posts, E-commerce product listings, Help and documentation. It is very efficient because it is built once and just served via the webserver.
+    + `server-side rendering`: generates html entirely on each request. (npm run dev does this)
+        + We use this if the page features frequesntly updated data and page content could change on each request...
+
+### TypeScript
+- Next.js types that are available [types](https://nextjs.org/learn/excel/typescript/nextjs-types)
+
 &nbsp;
 
 - Links explained: "in a production build of Next.js, whenever `Link` components appear in the browser’s viewport, Next.js automatically prefetches the code for the linked page in the background. By the time you click the link, the code for the destination page will already be loaded in the background, and the page transition will be near-instant!"
 
 - Static assets: "Next.js can serve static assets, like images, under the top-level public directory. Files inside public can be referenced from the root of the application similar to pages."
 
+- Rendering: "By default, Next.js pre-renders every page. This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO."
+
+- **hydration**: "Each generated HTML is associated with minimal JavaScript code necessary for that page. When a page is loaded by the browser, its JavaScript code runs and makes the page fully interactive. (This process is called hydration.)"
+
 ### Progress
+Basics
 + Create a Next.js app ✅
 + Navigate between pages ✅
-+ Assets, metadata and css (6)
++ Assets, metadata and css ✅
++ Pre-rendering and data fetching 
++ Dynamic routes
++ API routes
++ Deploying your Next.js app
+
+Search Engine Optimisation
++ Introduction to SEO
++ Crawling and indexing
++ Rendering and ranking
++ Performance & core web vitals
++ Improving your core web vitals
++ Monitoring your core web vitals
+
+Excel
++ Typescript ✅
