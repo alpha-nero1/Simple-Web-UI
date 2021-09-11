@@ -34,7 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 &nbsp;
 
-## 🅱️ Basics
+## Basics
 - The main app entry-point is the `_app.tsx` file, you would do initial app setup in this file.
 - the `index.tsx` at the root of the `pages/` dir would be your `/` entry page.
 - The `Link` tags allow you to do **client-side** navigation in the application. (as opposed to normal `<a>` tag)
