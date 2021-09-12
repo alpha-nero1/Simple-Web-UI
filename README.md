@@ -50,9 +50,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
         + You can use static generation for Marketing pages, Blog posts, E-commerce product listings, Help and documentation. It is very efficient because it is built once and just served via the webserver.
     + `server-side rendering`: generates html entirely on each request. (npm run dev does this)
         + We use this if the page features frequesntly updated data and page content could change on each request...
+- getStaticProps is only allowed in page files.
+
+### Server side rendering
+- To use Server-side Rendering, you need to export `getServerSideProps` instead of getStaticProps from your page.
+
+```
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      // props for your component
+    }
+  }
+}
+```
+
+### Client side rendering
+We of course could just render the page normally and make api requests at page load time
+if the situation was right, for instance if we implemented a dashboard.
+- Also next.js has created an excellent webhook for fetching data called `SWR` you can read up more about it here https://swr.vercel.app/ but in a nutshell it offers caching, revalidation, focus tracking, refetching on interval and more...
+
+### Dynamic Routes
+In Next.js we can handle dyanmic paghes by wrapping the file name with `[]` to highlight the dynamic property e.g. `/posts/[id].js`. We can then catch this id by implementing the `getStaticPaths` function in the page file.
++ Dynamic API routes: https://nextjs.org/docs/api-routes/dynamic-api-routes
 
 ### TypeScript
 - Next.js types that are available [types](https://nextjs.org/learn/excel/typescript/nextjs-types)
+
+## SEO
++ Why is it important: https://nextjs.org/learn/seo/introduction-to-seo/importance-of-seo
 
 &nbsp;
 
@@ -66,20 +92,23 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 - **hydration**: "Each generated HTML is associated with minimal JavaScript code necessary for that page. When a page is loaded by the browser, its JavaScript code runs and makes the page fully interactive. (This process is called hydration.)"
 
+- `getStaticProps()`: "This is possible because getStaticProps only runs on the server-side. It will never run on the client-side. It won’t even be included in the JS bundle for the browser. That means you can write code such as direct database queries without them being sent to browsers."
+    + "Because it’s meant to be run at build time, you won’t be able to use data that’s only available during request time, such as query parameters or HTTP headers."
+
 &nbsp;
 
-### ✔️ Progress
+### ✔️ Progress (9/14)
 Basics
 + Create a Next.js app ✅
 + Navigate between pages ✅
 + Assets, metadata and css ✅
-+ Pre-rendering and data fetching 
-+ Dynamic routes
-+ API routes
-+ Deploying your Next.js app
++ Pre-rendering and data fetching ✅
++ Dynamic routes ✅
++ API routes ✅
++ Deploying your Next.js app -
 
 Search Engine Optimisation
-+ Introduction to SEO
++ Introduction to SEO ✅
 + Crawling and indexing
 + Rendering and ranking
 + Performance & core web vitals
