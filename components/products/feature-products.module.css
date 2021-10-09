@@ -1,0 +1,30 @@
+.products {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productCard {
+    padding: 1rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    /* margin: 1rem; */
+    width: 16rem;
+    margin: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* So we don;t get the resizing effect */
+    border: 1px solid white;
+}
+
+.productCard h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.productCard a {
+    font-size: 14pt;
+}

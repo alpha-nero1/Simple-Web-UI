@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
+// Root component...
+export default function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
@@ -10,5 +11,3 @@ export function reportWebVitals(metric: any) {
   console.log('site metrics are: ');
   console.log(metric)
 }
-
-export default MyApp

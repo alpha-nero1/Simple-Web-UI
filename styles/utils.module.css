@@ -50,3 +50,137 @@
 .lightText {
     color: #666;
 }
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.title {
+    font-size: 8rem;
+    font-style: italic;
+    text-align: center;
+    animation: text-shadow 5s ease-in-out infinite;
+}
+
+.subtitle {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.homepageHeader {
+    margin-top: 0rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+.btnWarn {
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    height: 2rem;
+    margin: 0.2rem 0rem;
+    transition: 0.1s;
+}
+
+.btnWarn:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btnPrimary {
+    background-color: rgb(14, 48, 197);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    height: 2rem;
+    margin: 0.2rem 0rem;
+    min-width: 6rem;
+    transition: 0.1s;
+}
+
+.btnPrimary:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btnClear {
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    height: 2rem;
+    margin: 0.2rem 0rem;
+}
+
+.btnClear:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}

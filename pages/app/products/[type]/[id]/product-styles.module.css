@@ -1,0 +1,26 @@
+.productPage {
+    padding: 2rem;
+    width: 100%;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+}
+
+.imageContainer .image {
+    width: 100%;
+    height: 100%;
+    position: relative !important;
+    object-fit: contain;
+}
+
+.largeBtn {
+    width: 50%;
+    height: 4rem !important;
+}
+
+.mainSection {
+    padding-bottom: 4rem;
+}

@@ -4,6 +4,8 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts';
+import { FeatureProducts } from '../components/products/feature-products';
+import { Navbar } from '../components/core/navbar';
 
 
 interface Props {
@@ -12,45 +14,21 @@ interface Props {
 
 export default function Home({ allPostsData }: Props) {
   return (
-    <Layout home>
+    <>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <Navbar />
+      <section className={utilStyles.homepageHeader}>
+          <h1 className={utilStyles.title}>What can we do for you?</h1>
+          <h2 className={utilStyles.subtitle}>All the best products at the best prices.</h2>
+          <Link href="/app/products">
+            <button className={utilStyles.btnPrimary}>Shop now!</button>
+          </Link>
       </section>
-      {/* Show posts... */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+        <FeatureProducts />
       </section>
-    </Layout>
+    </>
   )
-}
-
-// Only runs on server side.
-// "It won’t even be included in the JS bundle for the browser."
-export async function getStaticProps() {
-  await Promise.resolve();
-  return {
-    props: {
-      allPostsData: getSortedPostsData()
-    }
-  }
 }
