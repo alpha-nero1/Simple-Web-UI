@@ -79,6 +79,9 @@ In Next.js we can handle dyanmic paghes by wrapping the file name with `[]` to h
 ### TypeScript
 - Next.js types that are available [types](https://nextjs.org/learn/excel/typescript/nextjs-types)
 
+### SEO
+(see the info folder for more information...)
+
 
 ## 👾 Good quotes from the docs
 
@@ -99,7 +102,7 @@ In Next.js we can handle dyanmic paghes by wrapping the file name with `[]` to h
 
 &nbsp;
 
-### ✔️ Progress (9/14)
+### ✔️ Progress (14/14)
 Basics
 + Create a Next.js app ✅
 + Navigate between pages ✅
@@ -112,10 +115,10 @@ Basics
 Search Engine Optimisation
 + Introduction to SEO ✅
 + Crawling and indexing ✅
-+ Rendering and ranking
-+ Performance & core web vitals
-+ Improving your core web vitals
-+ Monitoring your core web vitals
++ Rendering and ranking ✅
++ Performance & core web vitals ✅
++ Improving your core web vitals ✅
++ Monitoring your core web vitals ✅
 
 Excel
 + Typescript ✅
