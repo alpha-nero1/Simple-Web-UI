@@ -77,50 +77,6 @@ In Next.js we can handle dyanmic paghes by wrapping the file name with `[]` to h
 ### TypeScript
 - Next.js types that are available [types](https://nextjs.org/learn/excel/typescript/nextjs-types)
 
-## SEO
-+ Why is it important: https://nextjs.org/learn/seo/introduction-to-seo/importance-of-seo
-
-&nbsp;
-
-### Difference between 301 & 308 status code.
-- The main difference is that 301 allows for request method changes (GET/POST) however 308 does not.
-
-### 302 Temporary Redirect
-302 indicates that the destination url is a temporary redirect.
-
-### 410 Gone
-410 indicates "gone" meaning that your access to the destination is no longer available. It's not used often but we may want to use it for:
-- E-Commerce: Products permanently removed from inventory.
-- Forum: Threads that have been deleted by the user.
-- Blog: Blog post removed from site.
-
-### 503 Service Unavailable
-This indicates that the server is not ready to handle the request (your site is down). Returning 503 for your site is good if it is down for an extended period of time because it prevents loosing rankings long term.
-
-## Site maps
-"It's strongly recommended to use sitemaps and make them dynamic as new content is populated across your website. Static sitemaps are also valid, but they might be less useful to Google as it won't serve for constant discovery purposes."
-- We can use getServerSideProps in a /sitemap.xml.tsx file to generate dynamic sitemaps, the good stuff.
-
-### Meta Robot Tags
-Directives that search engines will always respect, they can make the indexation of your site easier.
-- The meta tag gives you flexibility to mark pages as noindex on demand. e.g.
-`<meta name="robots" content="noindex,nofollow" />`
-- "URLs that are restricted from bots crawling via robots.txt file will never be crawled by Google, but if the rules are added after pages are already indexed, pages might remain indexed. The best way to make sure that a page is not indexed is using the `noindex` tag."
-
-#### Google Tags
-- `<meta name="google" content="nositelinkssearchbox" />` tells google to not show searchbar from your site.
-- `<meta name="google" content="notranslate" />` tells google to not auto translate the page.
-
-### What are canonical tags?
-A canonical URL is the URL of the page that search engines think is most representative from a set of duplicate pages on your site. It lets google know that a page is th original source of truth and not a duplicate.
-- More here: https://nextjs.org/learn/seo/crawling-and-indexing/canonical
-
-Let's imagine that our e-commerce shop allows products to be accessible via example.com/products/phone and example.com/phone.
-
-Both are valid, working URLs, but we use canonical to prevent the detection of duplicate content that we own. If we decided that https://example.com/products/phone should be considered for rankings, we would create a canonical tag:
-
-`<link rel="canonical" href="https://example.com/products/phone" />`
-
 
 ## 👾 Good quotes from the docs
 
@@ -134,6 +90,10 @@ Both are valid, working URLs, but we use canonical to prevent the detection of d
 
 - `getStaticProps()`: "This is possible because getStaticProps only runs on the server-side. It will never run on the client-side. It won’t even be included in the JS bundle for the browser. That means you can write code such as direct database queries without them being sent to browsers."
     + "Because it’s meant to be run at build time, you won’t be able to use data that’s only available during request time, such as query parameters or HTTP headers."
+
+- SEO: "The main objective of Google's search engine is to give users the best results possible while taking localization and misspellings into account. In every case, Google cares about giving users a fast and smooth result with great website experience"
+
+- Page experience is becoming part of google's rankings: https://developers.google.com/search/blog/2021/04/more-details-page-experience
 
 &nbsp;
 
