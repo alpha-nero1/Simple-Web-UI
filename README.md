@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # 🖥️ Simple Web UI
+
+![Simple Web UI Preview](./thrifty-simple.gif)
+
 A simple next.js application. It is a follow-along implementation of the tutorial on the next.js site, found here: https://nextjs.org/learn/basics/create-nextjs-app
 The project demonstrates some key things:
 1. All material from the official next.js website tutorial/documentation.
