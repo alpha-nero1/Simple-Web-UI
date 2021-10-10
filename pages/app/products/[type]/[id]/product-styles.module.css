@@ -24,3 +24,8 @@
 .mainSection {
     padding-bottom: 4rem;
 }
+
+.price {
+    color: orange;
+    font-size: 18pt;
+}

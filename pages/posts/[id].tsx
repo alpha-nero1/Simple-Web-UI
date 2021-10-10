@@ -1,7 +1,7 @@
 import { GetStaticPropsContext } from 'next';
 import Head from 'next/head';
-import Layout from '../../components/layout';
-import Date from '../../components/date';
+import Layout from '../../components/tutorial/layout';
+import Date from '../../components/tutorial/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import utilStyles from '../../styles/utils.module.css'
 

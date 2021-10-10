@@ -1,0 +1,14 @@
+.page {
+    padding: 1rem 2rem;
+}
+
+.title {
+    font-size: 30pt;
+}
+
+.videoView {
+    height: 30rem;
+    width: 40rem;
+    border: 1px solid black;
+    object-fit: cover;
+}

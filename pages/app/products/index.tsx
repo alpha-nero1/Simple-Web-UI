@@ -1,11 +1,10 @@
-import { Navbar } from "../../../components/core/navbar";
+import { PageLayout } from "../../../components/core/page-layout/page-layout";
 import { FeatureProducts } from "../../../components/products/feature-products";
 
 export default function ProductsPage() {
     return (
-        <>
-            <Navbar />
+        <PageLayout page="products">
             <FeatureProducts />
-        </>
+        </ PageLayout>
     );
 }

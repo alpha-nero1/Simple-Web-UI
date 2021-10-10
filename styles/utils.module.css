@@ -83,10 +83,8 @@
 
 .homepageHeader {
     margin-top: 0rem;
-    padding: 1rem;
     padding-bottom: 2rem;
     width: 100%;
-    background-color: lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,4 +181,16 @@
 .btnClear:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     cursor: pointer;
+}
+
+.videoView {
+    margin-top: 0rem;
+    position: relative;
+    margin-bottom: -40rem;
+    z-index: -1;
+    top: 0;
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
 }

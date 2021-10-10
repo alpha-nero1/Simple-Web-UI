@@ -1,0 +1,30 @@
+.searchInput {
+    width: 20rem;
+    padding: 0rem 0.5rem;
+}
+
+#gradient
+{
+    background: linear-gradient(130deg, blue, rgb(0, 195, 255));
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 5s linear infinite;
+    -moz-animation: Animation 5s linear infinite;
+    animation: Animation 5s linear infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}

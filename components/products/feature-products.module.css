@@ -12,6 +12,7 @@
     /* margin: 1rem; */
     width: 16rem;
     margin: 2rem;
+    margin-bottom: 4rem;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@
 
 .productCard h3 {
     margin: 0;
-    padding: 0;
+    padding-bottom: 1rem;
 }
 
 .productCard a {

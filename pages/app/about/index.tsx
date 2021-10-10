@@ -1,9 +1,10 @@
 import React from 'react'
+import { PageLayout } from '../../../components/core/page-layout/page-layout'
 
 export default function AboutPage() {
     return (
-        <div>
+        <PageLayout page="about">
             
-        </div>
+        </PageLayout>
     )
 }
